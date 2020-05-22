@@ -38,7 +38,8 @@ to test endpoints please open [Postman](https://www.getpostman.com/).
   NOTE: delete functionality just update do soft delete with update status to 0
   
 ## How to Build and Test Contact Test Project
-open command prompt and goto api directory (`/src/EHealth.ContactApp\EHealth.Api.Contacts.Test`)
+open command prompt and goto api directory (`/src/EHealth.ContactApp\EHealth.Api.Contacts.Test`) \
+currently test update for service layer.
 run below commands
 ```
 dotnet restore
@@ -52,4 +53,4 @@ this project configure with Sql Server local database.
 - create table `Log` for Serilog (script available in (`src\DatabaseScripts\create_table_log`)
 
 ## Publish to Azure
-this project is deploy to azure and available for testing (``https://ehealthcontactapi.azurewebsites.net/api/contact/``)
+this application with database is deploy to azure and available for testing (``https://ehealthcontactapi.azurewebsites.net/api/contact/``)
