@@ -1,5 +1,5 @@
 # ehealthcontactapi
-this is REST API built with basic functionality of contact details using  asp.net core 3.1, entity framework core and xUnit test
+this is REST API built with basic functionality of contact details using  asp.net core 3.1, entity framework core and xUnit test.
 
 ## Dependencies
 - [ASP.NET Core 3.1]
