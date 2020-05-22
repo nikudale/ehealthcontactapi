@@ -30,7 +30,7 @@ Navigate to ```https://localhost:44393/api/contact/check``` to check if the API 
 to test endpoints please open [Postman](https://www.getpostman.com/).
 - Get all contacts [GET] (`https://localhost:44393/api/contact/`)
   --f.x `https://localhost:44393/api/contact/1` \
-- Get all single contact [GET] (`https://localhost:44393/api/contact/{id}`)
+- Get single contact [GET] (`https://localhost:44393/api/contact/{id}`)
 - Create Contact [POST] (`https://localhost:44393/api/contact/`) with passing json object in Body --> raw \
   --f.x  ``{	"firstName": "Test","lastName": "Abc","email": "abc1123@test.com","phoneNumber": "1111111111","status": 1}``
 - Update Contact [PUT] (`https://localhost:44393/api/contact/`) with passing json object in Body --> raw \
