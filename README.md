@@ -13,12 +13,15 @@ this is REST API built with basic functionality of contact details using  asp.ne
 
 ## How to Build API Project
 install .net core  
-open command prompt and goto api directory (`/src/EHealth.ContactApp\EHealth.Api.Contacts`)
+open command prompt and goto api directory (`src\EHealth.ContactApp\EHealth.Api.Contacts`)
 run below commands
 ```
 dotnet restore
+dotnet build
 dotnet run
 ```
+Alternate option with Visual studion open solution (`src\EHealth.ContactApp\EHealth.ContactApp.sln`) and run
+
 
 Navigate to ```https://localhost:44393/api/contact/check``` to check if the API is working
 
