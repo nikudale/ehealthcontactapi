@@ -50,3 +50,6 @@ dotnet test
 this project configure with Sql Server local database.
 - Add test sample insert data to ContactDB (script available in (`src\DatabaseScripts\insert_table_contact`)
 - create table `Log` for Serilog (script available in (`src\DatabaseScripts\create_table_log`)
+
+## Publish to Azure
+this project is deploy to azure and available for testing (``https://ehealthcontactapi.azurewebsites.net/api/contact/``)
