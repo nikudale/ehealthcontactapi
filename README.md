@@ -34,7 +34,8 @@ to test endpoints please open [Postman](https://www.getpostman.com/).
 - Update Contact [PUT] (`https://localhost:44393/api/contact/`) with passing json object in Body --> raw \
   --f.x  ``{ "Id":1, "firstName": "TestUpdate","lastName": "Abc","email": "abc1123@test.com","phoneNumber": "1111111111","status": 1}``
 - Delete Contact [DELETE] (`https://localhost:44393/api/contact/{id}`) \
-  --f.x `https://localhost:44393/api/contact/1`
+  --f.x `https://localhost:44393/api/contact/1` \
+  NOTE: delete functionality just update do soft delete with update status to 0
   
 ## How to Build and Test Contact Test Project
 open command prompt and goto api directory (`/src/EHealth.ContactApp\EHealth.Api.Contacts.Test`)
