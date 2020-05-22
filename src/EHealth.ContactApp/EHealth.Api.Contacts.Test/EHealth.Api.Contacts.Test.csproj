@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EvolentHealth.Api.Contacts\EHealth.Api.Contacts.csproj" />
+    <ProjectReference Include="..\EHealth.Api.Contacts\EHealth.Api.Contacts.csproj" />
   </ItemGroup>
 
 </Project>
