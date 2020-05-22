@@ -18,6 +18,7 @@ run below commands
 ```
 dotnet restore
 dotnet build
+dotnet ef database update (if not present apply migration to database)
 dotnet run
 ```
 Alternate option with Visual studion open solution (`src\EHealth.ContactApp\EHealth.ContactApp.sln`) and run
@@ -43,3 +44,8 @@ dotnet restore
 dotnet build
 dotnet test
 ```
+
+## Database Dependencies
+this project configure with Sql Server local database.
+- Add test sample insert data to ContactDB (script available in (`src\DatabaseScripts\insert_table_contact`)
+- create table `Log` for Serilog (script available in (`src\DatabaseScripts\create_table_log`)
