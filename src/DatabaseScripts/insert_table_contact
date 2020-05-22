@@ -1,0 +1,4 @@
+SET IDENTITY_INSERT [dbo].[Contacts] ON
+INSERT INTO [dbo].[Contacts] ([Id], [FirstName], [LastName], [Email], [PhoneNumber], [Status]) VALUES (1, N'Nitin', N'Kudale', N'nitin@test.com', N'1234567890', 1)
+INSERT INTO [dbo].[Contacts] ([Id], [FirstName], [LastName], [Email], [PhoneNumber], [Status]) VALUES (2, N'Ramesh', N'Shah', N'ramesh@test.com', N'1111111111', 1)
+SET IDENTITY_INSERT [dbo].[Contacts] OFF
