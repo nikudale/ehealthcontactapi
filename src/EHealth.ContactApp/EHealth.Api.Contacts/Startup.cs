@@ -17,6 +17,9 @@ using EHealth.Api.Contacts.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using EHealth.Api.Contacts.Mappings;
 using EHealth.Api.Contacts.Filters;
+using Microsoft.AspNetCore.Diagnostics;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace EvolentHealth.Api.Contacts
 {
@@ -67,6 +70,17 @@ namespace EvolentHealth.Api.Contacts
             }
 
             app.UseHttpsRedirection();
+
+            //handling unhandled exception, this will move to middleware with custom response
+            app.UseExceptionHandler(builder => builder.Run(async context =>
+            {
+                var excFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+                var exception = excFeature.Error;
+
+                var result = JsonConvert.SerializeObject(new { Message = exception.Message, IsSuccess = false });
+                context.Response.ContentType = "application/json";
+                await context.Response.WriteAsync(result);
+            }));
 
             app.UseRouting();
 
