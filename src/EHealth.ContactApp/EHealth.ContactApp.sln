@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHealth.Api.Contacts", "EvolentHealth.Api.Contacts\EHealth.Api.Contacts.csproj", "{5762D063-07AA-4DD2-8EE0-EA21C567A01D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHealth.Api.Contacts", "EHealth.Api.Contacts\EHealth.Api.Contacts.csproj", "{5762D063-07AA-4DD2-8EE0-EA21C567A01D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EHealth.Api.Common", "EHealth.Api.Common\EHealth.Api.Common.csproj", "{5940ABC2-C7C3-405A-A9EA-83A087F9F9B4}"
 EndProject
